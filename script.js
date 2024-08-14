@@ -133,7 +133,7 @@ function updateForecast(data) {
     // Display hourly forecast (up to 6 hours)
     data.list.slice(0, 6).forEach(forecast => {
         const hourlyElement = document.createElement('div');
-        hourlyElement.className = 'bg-gray-700 p-4 rounded shadow text-center';
+        hourlyElement.className = 'bg-gray-700 p-4 rounded shadow text-center hover:bg-gray-600  transition-all duration-300 ease-in-out transform hover:scale-105';
         hourlyElement.innerHTML = `
             <div class="text-lg font-bold">${new Date(forecast.dt_txt).getHours()}:00</div>
             <div class="text-2xl font-bold">${Math.round(forecast.main.temp)}°C</div>
@@ -147,7 +147,7 @@ function updateForecast(data) {
     // Display 5-day forecast (one forecast per day)
     for (let i = 0; i < 5; i++) {
         const forecastElement = document.createElement('div');
-        forecastElement.className = 'bg-gray-700 p-4 rounded shadow text-center';
+        forecastElement.className = 'bg-gray-700 p-4 rounded shadow text-center hover:bg-gray-600  transition-all duration-300 ease-in-out transform hover:scale-105';
         const forecastDay = data.list[i * 8];
         forecastElement.innerHTML = `
             <div class="text-lg font-bold">${new Date(forecastDay.dt_txt).toLocaleDateString()}</div>
