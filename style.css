@@ -1,42 +1,48 @@
+/* Import Tailwind's base styles, components, and utilities */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
+/* General transition effect for smooth background and text color changes */
 body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Light mode styles */
 .light-mode {
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: #f0f0f0; 
+    color: #333; 
 }
 
+/* Dark mode styles */
 .dark-mode {
-    background-color: #1a1a1a;
-    color: #f0f0f0;
+    background-color: #1a1a1a; 
+    color: #f0f0f0; 
 }
 
+/* Custom background color for elements with bg-gray-700 class */
 .bg-gray-700 {
-    background-color: #2a2a2a;
+    background-color: #2a2a2a; 
 }
 
+/* Adjust bg-gray-700 background color in light mode */
 .light-mode .bg-gray-700 {
-    background-color: #e0e0e0;
+    background-color: #e0e0e0; 
 }
 
-
+/* Styles for the theme toggle button */
 #themeToggle {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+    background-color: transparent; 
+    border: none; 
+    cursor: pointer; 
 }
 
+/* Font size for the theme icon */
 #themeIcon {
-    font-size: 20px;
+    font-size: 20px; 
 }
 
-
+/* Styles for the recent cities dropdown */
 #recentCitiesSelect {
     background-color: #48bb78; 
     color: white; 
@@ -47,17 +53,17 @@ body {
     cursor: pointer; 
     font-size: 1rem; 
     width: auto; 
-    display: block;
+    display: block; 
     appearance: none; 
 }
 
-
+/* Styles for the options inside the recent cities dropdown */
 #recentCitiesSelect option {
-    background-color: #2a2a2a;
+    background-color: #2a2a2a; 
     color: white; 
 }
 
-
+/* Class to hide elements from view */
 .hidden {
-    display: none;
+    display: none; 
 }

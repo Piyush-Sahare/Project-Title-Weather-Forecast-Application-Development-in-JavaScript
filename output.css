@@ -1,6 +1,6 @@
-/*
-! tailwindcss v3.4.9 | MIT License | https://tailwindcss.com
-*/
+/* Import Tailwind's base styles, components, and utilities */
+
+/* ! tailwindcss v3.4.9 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -761,27 +761,39 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+/* General transition effect for smooth background and text color changes */
+
 body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+/* Light mode styles */
 
 .light-mode {
   background-color: #f0f0f0;
   color: #333;
 }
 
+/* Dark mode styles */
+
 .dark-mode {
   background-color: #1a1a1a;
   color: #f0f0f0;
 }
 
+/* Custom background color for elements with bg-gray-700 class */
+
 .bg-gray-700 {
   background-color: #2a2a2a;
 }
 
+/* Adjust bg-gray-700 background color in light mode */
+
 .light-mode .bg-gray-700 {
   background-color: #e0e0e0;
 }
+
+/* Styles for the theme toggle button */
 
 #themeToggle {
   background-color: transparent;
@@ -789,9 +801,13 @@ body {
   cursor: pointer;
 }
 
+/* Font size for the theme icon */
+
 #themeIcon {
   font-size: 20px;
 }
+
+/* Styles for the recent cities dropdown */
 
 #recentCitiesSelect {
   background-color: #48bb78;
@@ -809,10 +825,14 @@ body {
           appearance: none;
 }
 
+/* Styles for the options inside the recent cities dropdown */
+
 #recentCitiesSelect option {
   background-color: #2a2a2a;
   color: white;
 }
+
+/* Class to hide elements from view */
 
 .hidden {
   display: none;
