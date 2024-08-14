@@ -53,10 +53,11 @@ function populateDropdown(cities = JSON.parse(localStorage.getItem('recentCities
     });
 
     // Show or hide the dropdown based on the number of cities
+    
     if (cities.length > 0) {
-        select.classList.remove('hidden');
+        select.style.display = 'block'; 
     } else {
-        select.classList.add('hidden');
+        select.style.display = 'none';
     }
 }
 
