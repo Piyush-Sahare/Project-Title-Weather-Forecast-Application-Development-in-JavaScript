@@ -2,3 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
+
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.light-mode {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+.bg-gray-700 {
+    background-color: #2a2a2a;
+}
+
+.light-mode .bg-gray-700 {
+    background-color: #e0e0e0;
+}
+
+
+#themeToggle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#themeIcon {
+    font-size: 20px;
+}
+
+
+#recentCitiesSelect {
+    background-color: #48bb78; 
+    color: white; 
+    padding: 0.5rem 1rem; 
+    border-radius: 0.375rem; 
+    border: none; 
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
+    cursor: pointer; 
+    font-size: 1rem; 
+    width: auto; 
+    display: block;
+    appearance: none; 
+}
+
+
+#recentCitiesSelect option {
+    background-color: #2a2a2a;
+    color: white; 
+}
+
+
+.hidden {
+    display: none;
+}
